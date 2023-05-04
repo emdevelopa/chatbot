@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- CHAT BAR BLOCK -->
+
+    <div class="chat-bar-collapsible">
+        <!-- Collapsible Button -->
+        <button id="chat-button" class="collapsible" type="button">Chat with us!
+            <i id="chat-icon" style="color:white;" class="fa fa-comments"></i>
+        </button>
+
+        <!-- content Area -->
+        <div class="content">
+            <div class="full-chat-block">
+                <div class="outer-container">
+                    <div class="chat-container">
+
+                        <!-- Chat Box Area Where Messages are Displayed -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+
+                        </div>
+
+                        <!-- Chat section for the input box and icons -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input type="text" name="msg" id="textInput" class="input-box"
+                                    placeholder="Enter a message...">
+                                <p></p>
+                            </div>
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color:crimson;" class="fa fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color:black;" class="fa fa-paper-plane"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="static/scripts/chat.js"></script>
+<script src="static/scripts/response.js"></script>
+
+</html>
