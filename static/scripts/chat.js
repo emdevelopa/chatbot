@@ -133,7 +133,7 @@ async function generateResponse(res) {
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "https://api.openai.com/v1/completions");
     xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.setRequestHeader("Authorization", "Bearer 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");
+    xhr.setRequestHeader("Authorization", "Bearer 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");
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
            
