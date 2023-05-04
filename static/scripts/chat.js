@@ -127,13 +127,13 @@ function sendButton() {
     }
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 }
-
+const t = "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";
 async function generateResponse(res) {
    
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "https://api.openai.com/v1/completions");
     xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.setRequestHeader("Authorization", "Bearer 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");
+    xhr.setRequestHeader("Authorization", `Bearer ${t}`);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
            
