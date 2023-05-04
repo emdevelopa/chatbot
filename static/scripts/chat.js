@@ -127,7 +127,7 @@ function sendButton() {
     }
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 }
-const t = "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";
+const t = "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";
 async function generateResponse(res) {
    
     var xhr = new XMLHttpRequest();
